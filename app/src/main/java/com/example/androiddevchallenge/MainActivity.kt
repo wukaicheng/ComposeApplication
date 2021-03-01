@@ -26,10 +26,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.androiddevchallenge.ui.Screen
-import com.example.androiddevchallenge.vm.PuppyViewModel
 import com.example.androiddevchallenge.ui.page.DetailPage
 import com.example.androiddevchallenge.ui.page.HomePage
 import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.vm.PuppyViewModel
 
 class MainActivity : AppCompatActivity() {
     val vm: PuppyViewModel by viewModels()
@@ -49,8 +49,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-
-// Start building your app here!
 @Composable
 fun MyApp(viewModel: PuppyViewModel) {
     val screen by viewModel.curScreen.observeAsState()
@@ -60,7 +58,6 @@ fun MyApp(viewModel: PuppyViewModel) {
         else DetailPage((screen as Screen.DetailsScreen).puppy)
     }
 }
-
 
 @Preview("Light Theme", widthDp = 360, heightDp = 640)
 @Composable

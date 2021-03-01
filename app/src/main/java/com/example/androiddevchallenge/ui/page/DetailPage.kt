@@ -32,8 +32,10 @@ import androidx.compose.material.Divider
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
@@ -50,10 +52,6 @@ import com.example.androiddevchallenge.ui.Pager
 import com.example.androiddevchallenge.ui.PagerState
 import com.example.androiddevchallenge.ui.theme.MyTheme
 import com.example.androiddevchallenge.ui.theme.typography
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
 
 @Composable
 fun DetailPage(puppy: Puppy) {
@@ -111,7 +109,6 @@ fun DetailPage(puppy: Puppy) {
             }
         }
 
-
         if (adoptSuccess) {
             TextButton(
                 onClick = {},
@@ -134,8 +131,6 @@ fun DetailPage(puppy: Puppy) {
                 )
             }
         }
-
-
     }
 }
 
@@ -147,7 +142,6 @@ private fun ProfileItem(key: String, value: String) {
     )
     Text(value, fontWeight = FontWeight.Light)
 }
-
 
 @Preview
 @Composable

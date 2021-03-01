@@ -90,7 +90,7 @@ object PuppyDataProvider {
         breed = "German Shepherd Dog/Australian Cattle Dog Mix",
         color = "Tan/Yellow/Fawn - with Black",
         location = "West Hollywood, CA",
-       images = listOf(
+        images = listOf(
             R.drawable.hula_1,
             R.drawable.hula_2,
         )
@@ -185,6 +185,6 @@ object PuppyDataProvider {
     )
 
     val puppyList = listOf(
-        Edison, Precious, Tink, Riley,Buster, Lucas, Gunner, Harry, Bronx, Hula, Roxy
+        Edison, Precious, Tink, Riley, Buster, Lucas, Gunner, Harry, Bronx, Hula, Roxy
     )
 }
